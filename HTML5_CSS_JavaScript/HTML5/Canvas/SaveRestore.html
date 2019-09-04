@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            saveRestore();
+        });
+
+
+        function saveRestore() {
+            var canvas = document.getElementById('myCanvas')
+                , ctx = canvas.getContext('2d');
+
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "green";
+            ctx.lineJoin = 'round';
+            ctx.strokeRect(20, 20, 50, 50);
+            ctx.save(); 
+ 
+            ctx.lineWidth = 10;
+            ctx.strokeStyle = "red";
+            ctx.lineJoin = 'bevel';
+            ctx.strokeRect(100, 100, 50, 50); 
+ 
+            ctx.restore();
+            ctx.strokeRect(180, 180, 50, 50);
+        }
+    </script>
+
+</head>
+<body>
+
+    <canvas id="myCanvas" height="800" width="600">
+        You need a browser that supports HTML5.
+    </canvas>
+</body>
+</html>

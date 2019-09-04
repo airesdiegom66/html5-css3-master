@@ -1,0 +1,39 @@
+﻿#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    float: left;
+    width: 55%;
+    padding: 2% 5%;
+    background: #f00;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding: 2% 5%;
+    background: #00f;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        float: none;
+        width: 90%;
+        padding: 5%;
+        background: #ccc;
+    }
+
+    aside {
+        float: none;
+        width: 90%;
+        padding: 5%;
+        background: #0f0;
+    }
+}
+
+footer {
+    padding: 5%;
+    clear: both;
+}

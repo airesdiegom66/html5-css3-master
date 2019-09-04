@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        You should also include more than one 'source' element to provide many sources so the browser can choose the most appropriate video codec. <br />
+        In the following example, the same movie has been rendered for each of the three most popular formats.
+    </p>
+    <p>
+        The position of the 'source' elements is important because a browser starts looking at the top and stops when it finds a file that it can display.<br />
+        The recommended order is to start with the .webm file because it’s royalty free and open source, and it’s becoming more popular.<br />
+        Next, use the .ogv file because it is also royalty free, but the quality is not as good as the .webm file.<br />
+        Finally, use the .mp4 format for browsers that don’t support .webm or .ogv files.
+
+        The type attribute includes both the MIME type and the codecs. <br />
+        Although the type attribute isn’t usually required, the browser can use it to help choose the proper video file to display.
+    </p>
+    <video controls="controls" height="480" poster="VideosExemplos/tumblr_inline_mqutgxtW2Z1qz4rgp.gif" >
+        
+        <source src="VideosExemplos/small.webm" type='video/webm; codecs="vorbis, vp8'   />
+        <source src="VideosExemplos/small.ogv" type='video/ogg; codecs="theora, vorbis"' />
+        <source src="VideosExemplos/small.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+    </video>
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../../Scripts/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            drawArc();
+            drawArc2();
+        });
+
+        function drawArc() {
+            var canvas = document.getElementById('myCanvas')
+                , ctx = canvas.getContext('2d');
+
+            ctx.strokeStyle = 'blue';
+            ctx.fillStyle = 'yellow';
+            ctx.lineWidth = 5;
+
+            ctx.beginPath();
+            ctx.arc(400, 300, 100, 0, 2 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+        }
+
+        function drawArc2() {
+            var canvas = document.getElementById('myCanvas2')
+                , ctx = canvas.getContext('2d'); 
+
+            ctx.strokeStyle = 'blue';
+            ctx.fillStyle = 'yellow';
+            ctx.lineWidth = 5;
+
+            ctx.beginPath();
+            ctx.arc(400, 300, 100, 0, 1.5 * Math.PI);
+            ctx.fill();
+            ctx.stroke();
+        }
+
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" height="800" width="600"></canvas>
+    <canvas id="myCanvas2" height="800" width="600"></canvas>
+</body>
+</html>

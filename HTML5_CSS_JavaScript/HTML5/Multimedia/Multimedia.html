@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/jquery-3.2.1.js"></script>
+</head>
+<body>
+    <video controls="controls">
+        <source src="VideosExemplos/Eagle.mp4" type="video/mp4" />
+    </video>
+
+    <video id="media" height="480">
+        <source src="VideosExemplos/eagle.webm" type='video/webm; codecs="vorbis, vp8"' />
+        <source src="VideosExemplos/eagle.ogv" type='video/ogg; codecs="theora, vorbis"' />
+        <source src="VideosExemplos/eagle.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+
+        <track id="englishtrack" kind="subtitles" src="captions.vtt" srclang="en" label="English" default="" />
+    </video>
+    <br />
+    <button type="button" id="play">Play</button>
+    <span id='message'></span>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#play').on('click', playStop);
+
+            $('#media').on('play', function () {
+                $('#play').html('Pause');
+            });
+
+            $('#media').on('pause', function () {
+                $('#play').html('Play');
+            });
+
+            $('#media').on('play', function () {
+                $('#message').html($('#media')[0].currentSrc);
+            });
+
+        });
+
+        function playStop() {
+            var media = $('#media')[0];
+
+            if (media.paused) {
+                media.play();
+            }
+            else {
+                media.pause();
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>

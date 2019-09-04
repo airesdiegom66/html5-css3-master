@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!-- basic mailto --> 
+    <a href="mailto:sales@contoso.com">Contact Sales</a><br />
+
+    <!-- add the name, notice that email is wrapped with &lt; and &gt; --> 
+    <a href="mailto:Joe&lt;sales@contoso.com&gt;">Contact Joe in Sales</a><br />
+
+    <!-- multiple recipients comma separated -->     
+    <a href="mailto:sales@contoso.com,service@contoso.com">Contact Sales and Service</a><br />
+
+    <!-- add carbon copy --> 
+    <a href="mailto:sales@contoso.com?cc=service@contoso.com">Contact Sales cc Service</a><br />
+
+    <!-- add blind carbon copy --> 
+    <a href="mailto:sales@contoso.com?bcc=service@contoso.com">Contact Sales</a><br />
+
+    <!-- basic mailto with message --> 
+    <a href="mailto:sales@contoso.com?body=call me.">Contact Sales with call me message</a><br />
+
+    <!-- basic mailto with multi line message --> 
+    <a href="mailto:sales@contoso.com?body=call me.%0AThanks">Contact Sales with multi line  message</a><br />
+
+    <!-- basic mailto with subject and message --> 
+    <a href="mailto:sales@contoso.com?subject=hi&body=call me.">Contact Sales with hi subject  and call me message</a><br />
+
+</body>
+</html>

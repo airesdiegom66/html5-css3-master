@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+
+        thead th {
+            background-color: #BDEAFF;
+            width: 100px;
+        }
+
+        tbody th {
+            background-color: #FFFF99;
+        }
+
+        tfoot th {
+            background-color: #C2FE9A;
+        }
+
+            tfoot th:last-of-type {
+                text-align: right;
+            }
+
+        td {
+            text-align: center;
+        }
+
+            td:last-of-type {
+                text-align: right;
+            }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: normal;
+        }
+    </style>
+    
+
+</head>
+<body>
+    <div role="main">
+        <button id="showAntique">Antique Cars</button>
+        <button id="showNonAntique">Non-Antique Cars</button>
+        <table>
+            <caption>Exemplo de tabela HTML</caption>
+            <thead>
+                <tr>
+                    <th>Vehicle #</th>
+                    <th>Category</th>
+                    <th>Year</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="antiqueCars">
+                <tr>
+                    <th>1</th>
+                    <td rowspan="2">Antique</td>
+                    <td>1957</td>
+                    <td>Ford</td>
+                    <td>Thunderbird</td>
+                    <td>14,000</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>1958</td>
+                    <td>Chevrolet</td>
+                    <td>Impala</td>
+                    <td>3,000</td>
+                </tr>
+                <tr>
+            </tbody>
+            <tbody id="nonAntiqueCars">                
+                <tr>
+                    <th>3</th>
+                    <td rowspan="2">Non-Antique</td>
+                    <td>2012</td>
+                    <td>BMW</td>
+                    <td>Z4</td>
+                    <td>40,000</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td>2003</td>
+                    <td>Mazda</td>
+                    <td>Miata</td>
+                    <td>5,000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="5">Total:</th>
+                    <th>62,000</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <script type="text/javascript">
+            init();
+
+            function init() {
+
+                document.getElementById('showAntique').addEventListener('click', showAntiqueCars);
+                document.getElementById('showNonAntique').addEventListener('click', showNonAntiqueCars);
+            }
+
+            function showAntiqueCars() {
+                document.getElementById('antiqueCars').className = "visible";
+                document.getElementById('nonAntiqueCars').className = "hidden";
+            }
+
+            function showNonAntiqueCars() {
+                document.getElementById('antiqueCars').className = "hidden";
+                document.getElementById('nonAntiqueCars').className = "visible";
+            }
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+
+    <script src="../Scripts/jquery-3.2.1.js"></script>
+    <script src="5.WebWorkers.js"></script>
+</head>
+<body>
+    <p>
+        It’s common to start a web worker, which creates its own event loop and waits for further input. This is similar to a service, which starts and waits for input and doesn’t
+        terminate after processing input. Consider the following HTML page that accepts input and has a button that sends the input to a web worker.
+        The web worker responds once for each character in the message sent, returning the uppercase of the letter.
+    </p>
+    <input type="text" id="message" value="Enter message here" /><br />     
+    <button id="btnSend" type="button">Send Message</button><br />     
+    <div id="result"></div>
+</body>
+</html>

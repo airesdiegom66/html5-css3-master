@@ -1,0 +1,220 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D5279EBF-B23A-41E8-87F7-50828D639157}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTML5_CSS_JavaScript</RootNamespace>
+    <AssemblyName>HTML5_CSS_JavaScript</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HTML5\Canvas\Arcs\HtmlPage1.html" />
+    <Content Include="HTML5\Canvas\Arcs\HtmlPage2.html" />
+    <Content Include="HTML5\Canvas\Arcs\HtmlPage3.html" />
+    <Content Include="HTML5\Canvas\CanvasPattern.html" />
+    <Content Include="HTML5\DragDrop\DataTransfer.html" />
+    <Content Include="HTML5\DragDrop\Scripts\dataTransfer.js" />
+    <Content Include="HTML5\DragDrop\DragDrop.html" />
+    <Content Include="HTML5\DragDrop\Scripts\dragDrop.js" />
+    <Content Include="HTML5\Canvas\DrawImages\DrawImages.html" />
+    <Content Include="HTML5\Canvas\DrawImages\DrawImages2.html" />
+    <Content Include="HTML5\Canvas\DrawingWithPaths\HtmlPage1.html" />
+    <Content Include="HTML5\Canvas\DrawingWithPaths\HtmlPage2.html" />
+    <Content Include="HTML5\Canvas\DrawingWithPaths\HtmlPage3.html" />
+    <Content Include="HTML5\Canvas\Images\iceboat.PNG" />
+    <Content Include="HTML5\Canvas\Images\redSquare.gif" />
+    <Content Include="HTML5\Canvas\LineJoin.html" />
+    <Content Include="HTML5\Canvas\LineWidth.html" />
+    <Content Include="HTML5\Canvas\RectangleGradient.html" />
+    <Content Include="HTML5\Canvas\RectangleFillColor.html" />
+    <Content Include="HTML5\Canvas\Rectangle.html" />
+    <Content Include="HTML5\Canvas\SaveRestore.html" />
+    <Content Include="HTML5\Canvas\StrokeStyles.html" />
+    <Content Include="HTML5\Canvas\Text.html" />
+    <Content Include="HTML5\DragDrop\DragDropFiles.html" />
+    <Content Include="HTML5\DragDrop\Scripts\dragDropFiles.js" />
+    <Content Include="HTML5\Multimedia\Audio\a2002011001-e02-128k.mp3" />
+    <Content Include="HTML5\Multimedia\Audio\Audio.html" />
+    <Content Include="HTML5\Multimedia\Multimedia.html" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\Eagle.mp4" />
+    <Content Include="HTML5\Multimedia\Video\Video2.html" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\small.ogv" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\small.webm" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\Eagle.ogv" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\Eagle.webm" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="HTML5\Forms\InputAndValidations.html" />
+    <Content Include="HTML5\Forms\PostQueryString.html" />
+    <Content Include="HTML5\Forms\PostSerializableJQuery.html" />
+    <Content Include="HTML5\Multimedia\Video\Video.html" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\SampleVideo_1280x720_1mb.flv" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\SampleVideo_1280x720_1mb.mkv" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\SampleVideo_1280x720_1mb.mp4" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\SampleVideo_176x144_1mb.3gp" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\small.3gp" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\small.flv" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\small.mp4" />
+    <Content Include="HTML5\Multimedia\VideosExemplos\tumblr_inline_mqutgxtW2Z1qz4rgp.gif" />
+    <Content Include="JQuery Async Codes\4.ConditionalAsync.js" />
+    <Content Include="JQuery Async Codes\5.WebWorkers.js" />
+    <Content Include="JQuery Async Codes\HtmlPage1.html" />
+    <Content Include="JQuery Async Codes\2.ParallelWhenThen.js" />
+    <Content Include="JQuery Async Codes\1.PromiseDeferred.js" />
+    <Content Include="JQuery Async Codes\3.UpdateProgress.js" />
+    <Content Include="JQuery Async Codes\myWork.js" />
+    <Content Include="JQuery Async Codes\WebWorkers.html" />
+    <Content Include="Scripts\jquery-3.2.1.js" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.2.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\qunit.css" />
+    <Content Include="CSS Scripts\cssBasicoHtml5.css" />
+    <Content Include="CssBoxModel.PNG" />
+    <Content Include="HTML Convencional\CSS\BoxModel.html" />
+    <Content Include="HTML Convencional\CSS\CssBoxModel.PNG" />
+    <Content Include="HTML Convencional\CSS\DivAbsolute.html" />
+    <Content Include="HTML Convencional\CSS\DivAbsolute2.html" />
+    <Content Include="HTML Convencional\CSS\DivFloat.html" />
+    <Content Include="HTML Convencional\CSS\DivFloat_Clear.html" />
+    <Content Include="HTML Convencional\CSS\Divs.html" />
+    <Content Include="HTML Convencional\CSS\DivStatic.html" />
+    <Content Include="HTML Convencional\CSS\1.LayoutBasico.html" />
+    <Content Include="HTML Convencional\Email.html" />
+    <Content Include="HTML Convencional\Iframe.html" />
+    <Content Include="HTML Convencional\Images.html" />
+    <Content Include="HTML Convencional\ObjectTag.html" />
+    <Content Include="HTML5\FormataTextos.html" />
+    <Content Include="HTML5\ImagensFiguras.html" />
+    <Content Include="HTML5\Lists.html" />
+    <Content Include="HTML5\1.LayoutBasico.html" />
+    <Content Include="HTML5\Lists2.html" />
+    <Content Include="HTML5\Tables.html" />
+    <Content Include="JavaScript\Design Pattern\CreateClassJS.js" />
+    <Content Include="JavaScript\Design Pattern\FactoryPattern.js" />
+    <Content Include="JavaScript\Design Pattern\ObjectLiteralPattern.js" />
+    <Content Include="JavaScript\Design Pattern\PrototypePattern.js" />
+    <Content Include="JavaScript\Design Pattern\PatternsTests.html" />
+    <Content Include="JavaScript\Design Pattern\tests.js" />
+    <Content Include="JavaScript\Inheritance\BaseClass.js" />
+    <Content Include="JavaScript\Inheritance\ChildClass.js" />
+    <Content Include="JavaScript\Inheritance\InheritanceTests.html" />
+    <Content Include="JavaScript\Inheritance\tests.js" />
+    <Content Include="JavaScript\Namespaces\Namespace.js" />
+    <Content Include="JavaScript\Namespaces\NamespaceAndSubnamespace.js" />
+    <Content Include="JavaScript\Namespaces\NamespaceIIFE.js" />
+    <Content Include="Scripts\qunit.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50104</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50104/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form id="myForm">
+        Favorite Car:
+        <select name="favoriteCar" required="required">
+            <option>Ford Fiesta</option>
+            <option value="Chevy">Chevrolet</option>
+            <option>BMW</option>
+        </select><br />
+        Comment:
+        <input type="text" name="comment" required="required" placeholder="enter a comment" /><br />
+        Email:
+        <input type="email" name="email" required="required" placeholder="give me your email"//><br />
+        Website:
+        <input type="url" name="website" title="http://contoso.com or https://contoso.com"
+               required="required" pattern="https?://.+" /><br />
+
+        Current Age:
+        <input type="number" name="age" min="18" max="99" value="30" required="required" /><br />
+        Rating:
+        <input type="range" name="rating" min="1" max="7" value="4" /><br />
+
+        <button type="submit" name="submit">Submit</button>
+    </form>
+    <style type="text/css">
+        /*The following is an example of setting the pseudo classes to control the look of the webpage.*/
+        /*■ You can provide alternate style rules to validation elements by implementing style rules on the
+        :valid, :invalid, :required, and :optional pseudo classes.*/ 
+        
+        :valid {
+            border: solid lime;
+            font-weight: normal;
+        }
+
+        :invalid {
+            border: solid red;
+            font-weight: bold;
+        }
+
+        :required {
+            background-color: Yellow;
+        }
+
+        :optional {
+            background-color: LightGray;
+        }
+    </style>
+</body>
+</html>

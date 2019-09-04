@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--The <object> tag The <object> tag embeds an object within an HTML document.
+    You can embed multimedia such as audio, video, Java applets, ActiveX, PDF, and Flash in your webpages.
+    The <object> tag contains the following attributes.
+    ■■ data Supplies the URL of the resource to be used by the object
+    ■■ form Indicates one or more form ids to which the object belongs
+    ■■ height Specifies the height in pixels of the object
+    ■■ name Defines the name of the object
+    ■■ type Defines the MIME type of data specified in the data attribute
+    ■■ usemap Indicates the name of a client-side image map to be used with the object
+    ■■ width Specifies the width in pixels of the object-->
+    <!--You can also use the <object>
+    tag to embed another webpage in your HTML document. The following is an example of using the <object>
+    element to embed a webpage in your HTML document.-->
+
+    <object id="headerContent" standby="loading header..." title="loading header..." width="100%" height="15%" type="text/html" data="Email.html"></object>
+
+    <!--As a rule, consider using the <iframe> tag when embedding a webpage from another domain into
+    your HTML document by using sandboxing. It’s made for that purpose, whereas the <object> tag is
+    a more general-purpose tag. The <object> tag behaves differently with different browsers, and you
+    might find that features such as tooltips work only with the <iframe> tag and not with the
+    <object> tag.-->
+    <!--It is possible to embed images and image maps in your HTML document by using the
+    <object> tag, but you should avoid doing so. It’s best to use the <img> tag to embed images.-->
+   
+    <!--Passing parameters to an object Because the <object> tag can represent any object, the <param>
+    tag enables you to pass data to the object. You can use one or more <param>
+    tags to pass parameters to plug-ins that have been embedded with the <object> tag. The
+    <param> tags must be before any alternate text that is within the <object> element.-->
+    
+    <!--The <param> tag has a name and a value attribute, and both are required for each <param> tag. The following 
+    is an example of using a <param> tag with an audio file to keep the audio file from automatically playing when 
+    the page is loaded.-->
+        
+    <object data="tada.wav"> 
+        <param name="autoplay" value="true" /> 
+    </object>
+
+
+</body>
+</html>

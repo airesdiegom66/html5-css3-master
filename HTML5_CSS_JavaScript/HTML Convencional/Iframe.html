@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--- IFRAME: The sandbox attribute places a set of extra restrictions on any content hosted by the iframe. When the sandbox attribute is set, the content is treated as being from a unique and potentially dangerous origin. Forms and scripts are disabled, and links are prevented from targeting other browsing contexts. Consider the following example.
+        <iframe sandbox src="http://someOtherDomain.net/content"> </iframe>
+    In the example, the source is referencing potentially hostile content in a different domain. This content will be affected by all the normal cross-site restrictions. In addition, the content will have scripting, plug-ins, and forms disabled. The content cannot navigate any frames or windows other than itself.
+    In the example, the source is referencing potentially hostile content in a different domain. This content will be affected by all the normal cross-site restrictions. In addition, the content will have scripting, plug-ins, and forms disabled. The content cannot navigate any frames or windows other than itself.
+
+    The restrictions can be overridden by space-separating any of the following. 
+    ■■ allow-forms Enables forms 
+    ■■ allow-same-origin Allows the content to be treated as being from the same origin instead of forcing it into a unique origin 
+    ■■ allow-scripts Enables scripts except pop-ups 
+    ■■ allow-top-navigation Allows the content to navigate its top-level browsing context-->
+
+
+    <!--<iframe sandbox="allow-same-origin allow-forms allow-scripts" src="http://www.uol.com.br"> </iframe><br />
+    <iframe sandbox="allow-forms" src="http://www.uol.com.br"> </iframe><br />
+    <iframe sandbox="allow-scripts" src="http://www.uol.com.br"> </iframe><br />-->
+
+
+    <a href="Email.html" target="content">Page1</a><br />
+    <a href="HtmlPage2.html" target="content">Page2</a><br />
+    <iframe name="content"></iframe><br />
+
+</body>
+</html>

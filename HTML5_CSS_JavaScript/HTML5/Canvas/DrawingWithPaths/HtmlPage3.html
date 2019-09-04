@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../../Scripts/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            drawRect();
+        });
+
+        function drawRect() {
+            var canvas = document.getElementById('myCanvas')
+                , ctx = canvas.getContext('2d');
+
+            ctx.fillStyle = 'green';
+            ctx.strokeStyle = 'yellow';
+            ctx.lineWidth = 10;
+
+            ctx.beginPath();
+            ctx.moveTo(100, 300);
+            ctx.lineTo(150, 250);
+            ctx.lineTo(200, 300);
+            ctx.rect(100, 300, 100, 100);
+            ctx.fill();
+            ctx.stroke();//*****
+            ctx.beginPath();//*****
+
+            ctx.moveTo(300, 300);
+            ctx.lineTo(350, 250);
+            ctx.lineTo(400, 300);
+            ctx.rect(300, 300, 100, 100);
+            ctx.stroke(); //*****
+            ctx.fill(); //*****
+        }
+
+        //These differences result from the fill method being called after the stroke method, so the fill color overwrites any previous color.
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" height="800" width="600"></canvas>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../../Scripts/jquery-3.2.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            drawUsingCssColor();
+
+        });
+
+        function drawUsingCssColor() {
+            var canvas = document.getElementById('myCanvas');
+            var ctx = canvas.getContext('2d');
+            var offset = 10;
+            var size = 50;
+
+            ctx.fillStyle = "red";
+            ctx.fillRect(offset + (0 * (offset + size)), offset, size, size);
+            ctx.fillRect(offset + (1 * (offset + size)), offset, size, size);
+
+            ctx.fillStyle = "#00FF00";
+            ctx.fillRect(offset + (2 * (offset + size)), offset, size, size);
+            ctx.fillRect(offset + (3 * (offset + size)), offset, size, size);
+
+            ctx.fillStyle = "rgba(0, 0, 255, 0.25)";
+            ctx.fillRect(offset + (4 * (offset + size)), offset, size, size);
+            ctx.fillRect(offset + (5 * (offset + size)), offset, size, size); 
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanvas" width="800" height="600">
+        You need a browser that supports HTML5.
+    </canvas>
+</body>
+</html>
